@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gameverse | فروشگاه بازی</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body { background: #fff; color: #111; font-family: "Segoe UI", sans-serif; margin: 0; padding: 0; direction: rtl; }
+    header { background: #facc15; padding: 1rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    h1 { margin: 0; font-size: 1.5rem; }
+    .cart { position: relative; cursor: pointer; }
+    .cart::before { content: "🛒"; font-size: 1.5rem; }
+    nav { margin: 1rem; }
+    details { margin-bottom: 0.5rem; }
+    summary { cursor: pointer; font-weight: bold; }
+    .product { border: 1px solid #ddd; padding: 1rem; margin: 1rem; border-radius: 0.5rem; background: #fafafa; }
+    .price { color: #10b981; font-weight: bold; }
+    .btn, .link-btn {
+      background: #3b82f6;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Gameverse</h1>
+    <div class="cart" onclick="alert('سبد خرید شما هنوز خالی است.')"></div>
+  </header>
+
+  <nav>
+    <details>
+      <summary>دسته‌بندی کنسول‌ها</summary>
+      <ul>
+        <li>PS4</li>
+        <li>PS5</li>
+        <li>Xbox</li>
+        <li>PC</li>
+        <li>Mobile</li>
+        <li>Nintendo Switch</li>
+      </ul>
+    </details>
+    <details>
+      <summary>نوع بازی</summary>
+      <ul>
+        <li>دوبله شده</li>
+        <li>دست‌ساز</li>
+        <li>معمولی</li>
+      </ul>
+    </details>
+  </nav>
+
+  <div class="product">
+    <h2>Angry Birds - نسخه موبایل</h2>
+    <p>بازی محبوب و کلاسیک پرندگان خشمگین با گرافیک جذاب و مراحل سرگرم‌کننده</p>
+    <p class="price">رایگان</p>
+    <a class="link-btn" href="https://example.com/angry-birds.apk" download>دانلود مستقیم بازی</a>
+  </div>
+
+  <div class="product">
+    <h2>God of War Ragnarok - PS5</h2>
+    <p>ماجراجویی حماسی کریتوس و آترئوس در اسکاندیناوی</p>
+    <p class="price">180,000 تومان</p>
+    <button class="btn" onclick="alert('افزوده شد به سبد خرید')">افزودن به سبد</button>
+  </div>
+</body>
+</html>
